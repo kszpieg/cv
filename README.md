@@ -1,4 +1,4 @@
 # my-cv
 My curriculum vitae
 
-Last modification: 05.01.2021
+Last modification: 31.10.2021
