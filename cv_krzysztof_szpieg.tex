@@ -1,0 +1,155 @@
+%\documentclass[twoside]{article}
+\documentclass{article}
+\usepackage{array, xcolor}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage{fontawesome5}
+
+
+\geometry{
+ a4paper,
+ total={180mm,257mm},
+ left=15mm,
+ right=15mm,
+ top=10mm,
+}
+
+\hyphenpenalty 10000
+\exhyphenpenalty 10000
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\title{\bf\Huge Krzysztof Szpieg}
+\author{
+\begin{minipage}[ht]{1.0\textwidth}
+\centering
+\faIcon[light]{phone} \href{mailto:kszpieg@gmail.com}{\texttt{on demand}}~~
+\faIcon{envelope} \href{mailto:kszpieg@gmail.com}{\nolinkurl{kszpieg@gmail.com}}~~
+%\faIcon[thin]{globe} \href{https://szpieg.dev}{\nolinkurl{szpieg.dev}}~~
+\faIcon{github}\href{https://github.com/kszpieg}{\nolinkurl{/kszpieg}}~~
+\faIcon{linkedin-in}\href{https://www.linkedin.com/in/kszpieg/}{\nolinkurl{/kszpieg}}
+\end{minipage}
+}
+\date{}
+
+\definecolor{lightgray}{gray}{.8}
+\newcolumntype{L}{>{\raggedleft}p{0.2\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\renewcommand{\headrulewidth}{0pt}
+
+%\fancyfoot[ec]{\footnotesize I hereby authorize you to process my personal data included in my job application for the needs of the recruitment process (in accordance to the Personal Data Protection Act 29.08.1997 no 133 position 883).}
+\fancyfoot[c]{\footnotesize I hereby authorize you to process my personal data included in my job application for the needs of the recruitment process (in accordance to the Personal Data Protection Act 29.08.1997 no 133 position 883).}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\section*{Professional Experience}
+\begin{tabular}{L!{\VRule}R}
+Mar 2022 -- present & Junior Software Configuration Manager / DevOps in GlobalLogic Poland \\
+{\small\color{gray}1 yr, 7 m}& \small Duties:
+\begin{itemize}
+\item Preparing Jenkins scripts in Groovy and Python for building projects
+\item Creating and configuring virtual machines for services like Rational ClearCase, Jenkins, Artifactory
+\item Creating automation scripts in Bash
+\item Preparing virtual machines using Vagrant scripts
+\item Creating pipelines in Jenkins
+\end{itemize}
+\end{tabular}
+
+\noindent
+\begin{tabular}{L!{\VRule}R}
+Jan 2021 -- Feb 2022 & Junior IT Specialist in IBM/Kyndryl \\
+{\small\color{gray}1 yr, 2 m} & \small  Duties:
+\begin{itemize}
+\item Preparing software installation packages for client's users
+\item Providing support for users by resolving reported incidents
+\end{itemize}
+\end{tabular}
+
+\noindent
+\begin{tabular}{L!{\VRule}R}
+Jul 2018 -- Sep 2018 & Trainee / Intern in Volvo Group Poland \\
+{\small\color{gray}3 m}& \small Duties:
+\begin{itemize}
+\item Providing support for a web app from the database level
+\end{itemize}
+\end{tabular}
+
+
+\section*{Education}
+\begin{tabular}{L!{\VRule}R}
+2019 -- 2020 & MSc of Computer Science, Wrocław University of Science and Technology\\
+& \small Thesis topic: "Photo selection methods for automatical generation of photo-albums,\linebreak with detection of people and objects in photos"
+\end{tabular}
+\begin{tabular}{L!{\VRule}R}
+2015 -- 2019 & BSc of Computer Science, Wrocław University of Science and Technology\\
+& \small Thesis topic: "Mobile application for the academic ministry"
+\end{tabular}
+
+\section*{Technologies}
+\begin{tabular}{L!{\VRule}R}
+Languages & Python, Bash\\
+Databases & MySQL, SQLite \\
+VM & VMWare, VirtualBox \\
+Tools & Git, Artifactory, Jenkins, Nagios, Docker, Vagrant \\
+OS & Linux, Windows
+\end{tabular}
+
+%section*{Certificates}
+%\begin{tabular}{L!{\VRule}R}
+%Jun. 19, 2019 & CCNA Routing and Switching: Routing and Switching Essentials
+%\end{tabular}
+
+%\newpage
+%\thispagestyle{fancy}
+
+%\section*{Projects}
+%\begin{tabular}{L!{\VRule}R}
+%Photo-tag & Desktop application for a master thesis which allows to tag objects on images and uses selection algorithm for creating album\\
+%& \footnotesize Used technologies: Python, OpenCV
+%\end{tabular}
+
+%\noindent
+%\begin{tabular}{L!{\VRule}R}
+%Nosh App & Mobile app where user can add food recipes, do shopping lists and search shops on map \\
+%& \footnotesize Used technologies: Java, SQLite, Google Maps API
+%\end{tabular}
+
+%\noindent
+%\begin{tabular}{L!{\VRule}R}
+%Most Mobile & Mobile app for academic ministry created for engineering thesis \\
+%& \footnotesize Used technologies: C\#, Xamarin Forms, SQLite, Google Maps API
+%\end{tabular}
+
+
+\section*{Languages}
+\begin{minipage}[ht]{.3\textwidth}
+\centering
+Polish | Native
+\end{minipage}
+\begin{minipage}[ht]{.3\textwidth}
+\centering
+English | B2/C1
+\end{minipage}
+\begin{minipage}[ht]{.3\textwidth}
+\centering
+German | A1
+\end{minipage}
+
+
+\section*{Interests}
+guitar playing, self-hosting, FOSS, linux
+
+\end{document}
