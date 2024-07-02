@@ -1,0 +1,105 @@
+{
+    "name": "Krzysztof Szpieg",
+    "contact": {
+        "email": "krzysztof@szpieg.dev",
+        "website": "szpieg.dev",
+        "github": "https://github.com/kszpieg",
+        "linkedin": "https://www.linkedin.com/in/kszpieg/"
+    },
+    "professional_experience": [
+        {
+            "position": "Junior DevOps Engineer",
+            "company": "GlobalLogic Poland",
+            "start_date": "Mar 2022",
+            "end_date": "present",
+            "duties": [
+                "Preparing Jenkins scripts in Groovy and Python for building projects",
+                "Creating and configuring virtual machines for services like Rational ClearCase, Jenkins, Artifactory",
+                "Creating automation scripts in Bash",
+                "Preparing virtual machines using Vagrant scripts",
+                "Creating pipelines in Jenkins"
+            ]
+        },
+        {
+            "position": "Junior IT Specialist",
+            "company": "IBM/Kyndryl",
+            "start_date": "Jan 2021",
+            "end_date": "Feb 2022",
+            "duties": [
+                "Preparing software installation packages for client's users",
+                "Providing support for users by resolving reported incidents"
+            ]
+        },
+        {
+            "position": "Trainee / Intern",
+            "company": "Volvo Group Poland",
+            "start_date": "Jul 2018",
+            "end_date": "Sep 2018",
+            "duties": [
+                "Providing support for a web app from the database level"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "MSc of Computer Science",
+            "university": "Wrocław University of Science and Technology",
+            "start_date": "2019",
+            "end_date": "2020",
+            "thesis": "Photo selection methods for automatical generation of photo-albums, with detection of people and objects in photos"
+        },
+        {
+            "degree": "BSc of Computer Science",
+            "university": "Wrocław University of Science and Technology",
+            "start_date": "2015",
+            "end_date": "2019",
+            "thesis": "Mobile application for the academic ministry"
+        }
+    ],
+    "technologies": {
+        "languages": ["Python", "Bash"],
+        "databases": ["MySQL", "SQLite"],
+        "vm": ["VMWare", "VirtualBox"],
+        "tools": ["Git", "Artifactory", "Jenkins", "Nagios", "Docker", "Vagrant"],
+        "os": ["Linux", "Windows"]
+    },
+    "certificates": [
+        {
+            "date_issued": "Jun. 19, 2019",
+            "date_expiration": "Jun. 19, 2019",
+            "name": "CCNA Routing and Switching: Routing and Switching Essentials",
+            "certificate_link": "https://github.com/kszpieg"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Photo-tag",
+            "description": "Desktop application for a master thesis which allows to tag objects on images and uses selection algorithm for creating album",
+            "technologies": ["Python", "OpenCV"],
+            "link": "https://github.com/kszpieg"
+        },
+        {
+            "name": "Nosh App",
+            "description": "Mobile app where user can add food recipes, do shopping lists and search shops on map",
+            "technologies": ["Java", "SQLite", "Google Maps API"],
+            "link": "https://github.com/kszpieg"
+        },
+        {
+            "name": "Most Mobile",
+            "description": "Mobile app for academic ministry created for engineering thesis",
+            "technologies": ["C#", "Xamarin Forms", "SQLite", "Google Maps API"],
+            "link": "https://github.com/kszpieg"
+        }
+    ],
+    "languages": {
+        "polish": "Native",
+        "english": "B2",
+        "german": "A1"
+    },
+    "interests": [
+        "guitar playing",
+        "self-hosting",
+        "FOSS",
+        "linux"
+    ]
+}
