@@ -40,11 +40,11 @@ header .download-pdf i {
     margin: 1.25rem 0;
 }
 
-#contact-info {
+#contact-info > div {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .contact-item {
@@ -74,7 +74,7 @@ main {
 }
 
 .section-header {
-    margin-top: 1.9rem;
+    margin-top: 0.1rem;
     font-size: 1.5em;
     font-weight: bold;
 }

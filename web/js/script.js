@@ -17,11 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
 function populateContact(contact) {
     const contactInfo = document.getElementById('contact-info');
     const icons = {
+        "phone": "phone-alt",
         "email": "envelope",
         "website": "globe",
         "github": "github",
         "linkedin": "linkedin-in"
     };
+
+    const mainContactDiv = document.createElement('div');
+    const socialContactDiv = document.createElement('div');
 
     Object.entries(contact).forEach(([key, value]) => {
         const container = document.createElement('div');
@@ -33,25 +37,43 @@ function populateContact(contact) {
 
         const text = document.createElement('a');
         switch (key) {
+            case 'phone':
+                text.href = `tel:${value.replace(/ /g,"")}`;
+                text.textContent = value;
+                break;
             case 'email':
-                text.href = `mailto:${contact[key]}`;
-                text.textContent = contact[key];
+                text.href = `mailto:${value}`;
+                text.textContent = value;
                 break;
             case 'website':
-                text.href = `https://${contact[key]}`;
-                text.textContent = contact[key];
+                text.href = `https://${value}`;
+                text.textContent = value;
+                break;
+            case 'github':
+            case 'linkedin':
+                text.href = value;
+                text.textContent = '/kszpieg';
                 break;
             default:
-                text.href = contact[key];
-                text.textContent = (key === 'github' || key === 'linkedin') ? '/kszpieg' : contact[key];
+                text.href = value;
+                text.textContent = value;
                 break;
         }
         text.style.color = 'blue'; // text color
 
         container.appendChild(icon);
         container.appendChild(text);
-        contactInfo.appendChild(container);
+
+        if (key === 'website' || key === 'github' || key === 'linkedin') {
+            socialContactDiv.appendChild(container);
+        } else {
+            mainContactDiv.appendChild(container);
+        }
+        
     });
+
+    contactInfo.appendChild(mainContactDiv);
+    contactInfo.appendChild(socialContactDiv);
 }
 
 function calculateDurationPeriod(start_date, end_date) {
