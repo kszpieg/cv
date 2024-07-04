@@ -19,7 +19,7 @@ function populateContact(contact) {
     const icons = {
         "phone": "phone-alt",
         "email": "envelope",
-        "website": "globe",
+        "website": "globe-americas",
         "github": "github",
         "linkedin": "linkedin-in"
     };
