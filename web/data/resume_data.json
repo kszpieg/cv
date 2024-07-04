@@ -57,7 +57,7 @@
             "thesis": "Mobile application for the academic ministry"
         }
     ],
-    "technologies": {
+    "skills": {
         "languages": ["Python", "Bash"],
         "databases": ["MySQL", "SQLite"],
         "vm": ["VMWare", "VirtualBox"],

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
             populateContact(data.contact);
             populateProfessionalExperience(data.professional_experience);
             populateEducation(data.education);
-            populateTechnologies(data.technologies);
+            populateSkills(data.skills);
             populateLanguages(data.languages);
             //TODO populateCertificates(data.certificates);
             //TODO populateProjects(data.projects);
@@ -212,42 +212,42 @@ function formatCategory(category) {
     return category.charAt(0).toUpperCase() + category.slice(1);
 }
 
-function populateTechnologies(technologies) {
+function populateSkills(skills) {
     const main = document.querySelector('main');
     const section = document.createElement('section');
     section.className = 'resume-part';
     
     const header = document.createElement('h2');
     header.className = 'section-header';
-    header.textContent = 'Technologies';
+    header.textContent = 'Skills';
     section.appendChild(header);
     
-    Object.entries(technologies).forEach(([category, items]) => {
+    Object.entries(skills).forEach(([category, items]) => {
         const item = document.createElement('div');
         item.className = 'resume-item';
-        item.classList.add('resume-item-technologies');
+        item.classList.add('resume-item-skills');
         
         const categoryDiv = document.createElement('div');
         categoryDiv.className = 'left-column';
         categoryDiv.textContent = formatCategory(category);
         item.appendChild(categoryDiv);
         
-        const technologiesList = document.createElement('div');
-        technologiesList.className = 'right-column';
-        items.forEach((technology, index) => {
+        const skillsList = document.createElement('div');
+        skillsList.className = 'right-column';
+        items.forEach((skill, index) => {
             const techSpan = document.createElement('span');
             techSpan.className = 'item list';
-            techSpan.textContent = technology;
+            techSpan.textContent = skill;
             
-            technologiesList.appendChild(techSpan);
+            skillsList.appendChild(techSpan);
             
             // If it's not the last item, add a comma and space
             if (index < items.length - 1) {
-                technologiesList.appendChild(document.createTextNode(', '));
+                skillsList.appendChild(document.createTextNode(', '));
             }
         });
 
-        item.appendChild(technologiesList);
+        item.appendChild(skillsList);
         section.appendChild(item);
     });
     
